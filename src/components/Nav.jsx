@@ -1,7 +1,8 @@
 const LINKS = [
-    { href: '#product', label: 'Продукт' },
-    { href: '#how-it-works', label: 'Как это работает' },
-    { href: '#partners', label: 'Партнёры' },
+    { href: '/#product', label: 'Продукт' },
+    { href: '/#how-it-works', label: 'Как это работает' },
+    { href: '/#api', label: 'API' },
+    { href: '/#partners', label: 'Партнёры' },
 ]
 
 export default function Nav() {

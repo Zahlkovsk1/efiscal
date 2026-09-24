@@ -1,25 +1,16 @@
-import Nav from './components/Nav'
-import Hero from './components/Hero'
-import ProblemSolution from './components/ProblemSolution'
-import FeatureGrid from './components/FeatureGrid'
-import HowItWorks from './components/HowItWorks'
-import Partners from './components/Partners'
-import CTA from './components/CTA'
-import Footer from './components/Footer'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Privacy from './pages/Privacy'
+import Terms from './pages/Terms'
 
 export default function App() {
   return (
-    <div id="top">
-      <Nav />
-      <main>
-        <Hero />
-        <ProblemSolution />
-        <FeatureGrid />
-        <HowItWorks />
-        <Partners />
-        <CTA />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
