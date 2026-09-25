@@ -29,11 +29,6 @@ const COLUMNS = [
             { label: 'Партнёрам', href: 'mailto:partners@efiscal.uz' },
             { label: 'Карьера', href: 'mailto:jobs@efiscal.uz' },
             { label: 'Контакты', href: '/#contact' },
-            {
-                label: 'Telegram',
-                href: 'https://t.me/efiscal',
-                external: true,
-            },
         ],
     },
     {
